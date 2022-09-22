@@ -1,0 +1,137 @@
+    1  ls
+    2  exit
+    3  ls -l
+    4  ls -la
+    5  ls -l
+    6  cd /root/
+    7  ls
+    8  cd /home/
+    9  ls
+   10  mkdir test1
+   11  ls
+   12  cd test1/
+   13  cd ../
+   14  ls
+   15  pwd
+   16  mkdir test2/test3
+   17  mkdir -p test2/test3 
+   18  ls
+   19  ls test2/test3/
+   20  cd /home/
+   21  touch test1/index.php
+   22  ls test1/
+   23  cd /home/test1/ && ls
+   24  pwd
+   25  cp index.php copy.php
+   26  ls
+   27  ls -la
+   28  cd ../
+   29  ls
+   30  cp -r test1 test4
+   31  ls
+   32  ls test4
+   33  cd /home
+   34  ls
+   35  mv test2/test3/ test3
+   36  ls
+   37  ls test2/
+   38  ls -la
+   39  cd /home
+   40  ls
+   41  mv test4 test1_copy
+   42  ls
+   43  cd /home
+   44  ls test1
+   45  rm test1/copy.php 
+   46  ls
+   47  ls test1
+   48  rm -r test3/
+   49  ls
+   50  ls -l
+   51  cd /home
+   52  rm test1_copy/*.php
+   53  ls test1_copy/
+   54  ls -l
+   55  tree 
+   56  pwd;find . | sort | sed '1d;s/^\.//;s/\/\([^/]*\)$/|--\1/;s/\/[^/|]*/|  /g'
+   57  eco '# Hello World!' > README.md
+   58  echo '# Hello World!' > README.md
+   59  cat README.md 
+   60  echo 'Linux Practice' >> README.md 
+   61  echo '-----------------' >> README.md 
+   62  cat README.md 
+   63  vim
+   64  vi
+   65  vi README.md 
+   66  exit
+   67  exit
+   68  cd root/
+   69  ls
+   70  cd server_lesson/
+   71  ls
+   72  git status
+   73  git log
+   74  cd linux_practice2/
+   75  ls
+   76  ls documents/
+   77  ls
+   78  mkdir trash
+   79* l
+   80  history
+   81  less exec_command.log 
+   82  cd documents/
+   83  ls | grep -E '([2,3][0-9]|40)' 
+   84  ls | grep -E '([2,3][0-9]|40)' | xargs mv -t ../trash/
+   85  ls
+   86  cd ../trash/
+   87  ls
+   88  git status
+   89  git add ../documents/
+   90  git status
+   91  git add ../documents/*
+   92  git status
+   93  git add ../documents/gizumo*
+   94  git status
+   95  git status
+   96  git add .
+   97  git status
+   98  git add ../documents/
+   99  git add -A ../documents/
+  100  git status
+  101  git reset HEAD
+  102  git status
+  103  git add -A ../documents/
+  104  git status
+  105  git add ./
+  106  git status
+  107  git add .
+  108  git add ../.gitignore 
+  109  git status
+  110  git reset HEAD
+  111  git status
+  112  rm ../.gitignore 
+  113  rm ../exec_command.log 
+  114  git status
+  115  git add -A
+  116  git add -A ../
+  117  git status
+  118  git commit -m 'Move gizumo20.md ~ gizumo40.md under documents directory to trash directory'
+  119  git status
+  120  cd ../
+  121  ls
+  122  touch .gitignore
+  123  git add .
+  124  git status
+  125  git commmit -m 'Add gitignore'
+  126  git commit -m 'Add gitignore'
+  127  vi .gitignore 
+  128  git status
+  129  git commit -am 'Update gitignore'
+  130  git status
+  131  git status --ignored
+  132  git rem --cached trash/gizumo2*
+  133  git rm --cached trash/gizumo2*
+  134  git status
+  135  git add .
+  136  git commit -m 'Delete gizumo20.md ~ gizumo29.md from git repository'
+  137  history 300 > exec_command.log
